@@ -76,7 +76,7 @@ export class AppComponent {
 
   post(body) {
     this.http.post('http://localhost:3000/messages', body, {
-      headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded'),
+      headers: new HttpHeaders().set('Content-Type', 'application/json;charset=utf-8'),
     }).subscribe(data => {
       // Read the result field from the JSON response.
       this.result = data['result'];
