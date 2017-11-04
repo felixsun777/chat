@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>
+    Friend List
+  </h1>
+</div>
+
+
+<h2>
+  <ul class="display">
+    <li *ngFor="let friend of friends" (click)="onSelect(friend)">
+      {{friend}}
+    </li>
+  </ul>
+</h2>

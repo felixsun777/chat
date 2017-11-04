@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <br>
+  <br>
+  <h1>
+    Welcome to {{title}}
+  </h1>
+  <br>
+  <h3>Please Login first</h3>
+  <br><br><br>
+
+
+
+  <table align="center">
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" #username></td>
+    </tr>
+    <br>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" (keypress)="onKeypress($event,username,password)" #password></td>
+    </tr>
+    <br><br><br>
+    <tr>
+      <td><button (click)="submitClick(username,password)">Submit</button></td>
+      <td><button (click)="resetClick(username,password)">Reset</button></td>
+    </tr>
+  </table>
+
+
+
+</div>
+

@@ -46,7 +46,6 @@ table {
 }
 
 li {
-  cursor: pointer;
   position: relative;
   background-color: #98ee99;
   margin: .5em;
